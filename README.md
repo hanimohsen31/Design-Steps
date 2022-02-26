@@ -29,24 +29,5 @@ I have simulated the famous site for showing movies and series, which is Netflix
 #### Video Demo:
 https://youtu.be/YBCUt2iTlyI
 
-## Photos of site: 
 
-### 1. Home Page
-![home page Image](/static/readme/home.jpg)
-
-### 2. Tv Shows
-![shows page Image](/static/readme/shows.jpg)
-
-### 3. My List
-![mylist page Image](/static/readme/mylist.jpg)
-
-### 4. About
-#### This Page for the course's Polcies
-![about page Image](/static/readme/about.jpg)
-
-### 5. Log In
-![Loging page Image](/static/readme/login.jpg)
-
-### 6. Register
-![register page Image](/static/readme/register.jpg)
 

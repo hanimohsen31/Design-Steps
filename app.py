@@ -1,3 +1,4 @@
+import imp
 import os
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
@@ -6,7 +7,6 @@ from tempfile import mkdtemp
 from sqlalchemy import PrimaryKeyConstraint
 from werkzeug.security import check_password_hash, generate_password_hash
 from flask import session, url_for
-
 from helpers import apology, login_required, lookup, usd
 
 # Configure application
@@ -25,6 +25,10 @@ Session(app)
 
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///design.db")
+# db = SQL("https://firebasestorage.googleapis.com/v0/b/design-steps.appspot.com/o/design.db?alt=media&token=15cce15a-58f6-4add-86cf-956edfb34a6e")
+# postgres://ckhcrgnmjqgvta:465294900aa8ff756289f1b8cd427c188d707881ce88f9b00a4ad990b2d1029d@ec2-3-227-195-74.compute-1.amazonaws.com:5432/d3u9elt515ribt
+
+
 
 @app.after_request
 def after_request(response):

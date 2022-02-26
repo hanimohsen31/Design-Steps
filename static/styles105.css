@@ -30,7 +30,7 @@ xxl: 1400px */
 /* On screens that are 768px or less, set the following */
 @media screen and (max-width: 768px) {
     .Portfolio {
-        margin: -20px auto 45px;
+        margin: 45px auto;
     }
   }
   

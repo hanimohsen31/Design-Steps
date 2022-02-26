@@ -1,0 +1,58 @@
+/* Portfolio */
+.Portfolio{
+    text-align: center;
+    margin: 45px auto;
+}
+.Portfolio h1 {
+    font-weight: 300;
+}
+
+.PortfolioDes{
+    margin: 25px auto;
+    /* max-width: 60%; */
+    font-size: larger;
+}
+
+.PortfolioBtn{
+    margin: 5px auto;
+
+}
+
+/* PortfolioCard */
+
+/* xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px */
+
+/* On screens that are 768px or less, set the following */
+@media screen and (max-width: 768px) {
+    .Portfolio {
+        margin: -20px auto 45px;
+    }
+  }
+  
+
+  .PortfolioCard img {
+    height: 230px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.PortfolioCard {
+    transition: 0.2s;
+    background-color: #191b1b;
+    color: white;
+    margin: 20px 0;
+    box-shadow: 0px 0px 5px 0.5px black;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.PortfolioCard:hover{
+    transform: scale(1.05);
+}
+

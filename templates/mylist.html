@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block main %}
+
+<!-- trending -->
+<div class="container-fluid">
+  <div id="columns">
+
+    {% for i in data['data'] %}
+    <figure>
+      <img src="{{i['image_file']}}" style="border-radius: 5px 5px 0 0;">
+        <figcaption>
+            
+          <div class="row" style="justify-content: space-between;align-items: center;padding: 0 10px;">
+              <div class="col0 col-3">
+                  <h2>{{i['cat']}}</h2>
+              </div>
+
+              <div class="col2 col-3">
+                <a onClick="" href="" style="text-decoration: none">
+                  <!-- <i class="fa-regular fa-circle-play"></i> -->
+                  <form action="/mylist" method="post">
+                    <input type="text" name="list1" value="{{i['id']}}" hidden />
+                    <button class="btn btn-dark" type="submit" style="background-color: #191b1b">
+                      <i class="fas fa-minus-circle"></i>
+                    </button>
+                  </form>
+                </a>
+              </div>
+
+          </div>
+
+        </figcaption>
+  </figure>
+
+
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
